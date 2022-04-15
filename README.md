@@ -22,7 +22,7 @@ https://calorie-calculator-spring.herokuapp.com/
 it takes a GET-request and responds with a list of all foods in the database in Json
 - https://calorie-calculator-spring.herokuapp.com/getstatistic
 it takes a POST-request with a Json body and responds with statistic
-Example for Json body:
+- Example for Json body:
 ```json
 [{
 		"foodID": 2,
