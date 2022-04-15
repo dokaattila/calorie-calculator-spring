@@ -52,3 +52,6 @@ To do:
 - more features
 - Installing guide.
 
+## Acknowledgements
+- This project is a further thought version of the original application, which uses Java Swing.
+
