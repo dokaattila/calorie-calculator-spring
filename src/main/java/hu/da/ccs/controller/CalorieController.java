@@ -4,7 +4,6 @@ import hu.da.ccs.model.Food;
 import hu.da.ccs.model.Meal;
 import hu.da.ccs.model.Statistic;
 import hu.da.ccs.service.CalorieService;
-import net.minidev.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
