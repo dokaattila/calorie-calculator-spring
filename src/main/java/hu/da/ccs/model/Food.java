@@ -1,10 +1,12 @@
 package hu.da.ccs.model;
 
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
 import lombok.Data;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @Jacksonized
 @Data
 public class Food {
