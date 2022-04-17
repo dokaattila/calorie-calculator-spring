@@ -1,6 +1,7 @@
 package hu.da.ccs.controller;
 
 import hu.da.ccs.model.Food;
+import hu.da.ccs.model.Meal;
 import hu.da.ccs.model.Statistic;
 import hu.da.ccs.service.CalorieService;
 import net.minidev.json.JSONObject;
@@ -24,6 +25,17 @@ public class CalorieController {
     @PostMapping("/getstatistic")
     public Statistic getStatistic(@RequestBody String content) {
         return this.calorieService.getStatistic(content);
+    }
+
+    @GetMapping("/getallmeal")
+    public List<Meal> getAllMeal() {
+        return this.calorieService.getAllMeal();
+    }
+
+
+    @PostMapping("/getmealstatistic")
+    public Statistic getMealStatistic(@RequestBody String content) {
+        return this.calorieService.getMealStatistic(content);
     }
 
 }
