@@ -39,22 +39,17 @@ it takes a GET-request and returns a JSON object with all foods.
 it takes a POST-request with a request body, which is a JSON object. It returns a JSON object with statistics.
 - Example for request body:
 ```json
-[{
-		"foodID": 2,
-		"foodName": "Alma, aszalt",
-		"foodFat": 0.0,
-		"foodCarb": 1.4,
-		"foodProtein": 242.0,
-		"foodCalories": 55.4
-	},
-	{
-		"foodID": 3,
-		"foodName": "Alma, befőtt",
-		"foodFat": 0.0,
-		"foodCarb": 0.3,
-		"foodProtein": 85.0,
-		"foodCalories": 20.2
-	}
+[
+  {
+    "id": 2,
+    "name": "Alma, aszalt",
+    "amount": 100
+  },
+  {
+    "id": 3,
+    "name": "Alma, befőtt",
+    "amount": 100
+  }
 ]
 ```
 - Example for returned JSON object:
