@@ -8,6 +8,7 @@ import hu.da.ccs.model.Statistic;
 import hu.da.ccs.service.ConnectionData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
 import java.lang.reflect.Type;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -57,7 +58,7 @@ public class MealDAOImpl implements MealDAO {
         double sumCarb = foodList.stream().map(Food::getFoodCarb).reduce(Double::sum).orElse(0.0);
         double sumProt = foodList.stream().map(Food::getFoodProtein).reduce(Double::sum).orElse(0.0);
         return new Statistic(sumCal, sumCarb, sumFat, sumProt,
-                sumCal/listSize, sumCarb/listSize, sumFat/listSize, sumProt/listSize);
+                sumCal / listSize, sumCarb / listSize, sumFat / listSize, sumProt / listSize);
     }
 
     private Food getFoodFromMeal(int id, double amount) {

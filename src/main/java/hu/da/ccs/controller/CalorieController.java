@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
-@RestController
+@CrossOrigin
+@RestController//@Controller + ResponseBody - Controller class + JSON response
 public class CalorieController {
 
     @Autowired
