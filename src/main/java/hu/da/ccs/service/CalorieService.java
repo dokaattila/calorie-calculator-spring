@@ -33,4 +33,8 @@ public class CalorieService {
     public Statistic getMealStatistic(String content) {
         return mealDAO.getMealStatistic(content);
     }
+
+    public List<Meal> getMealByLetters(String letters) {
+        return this.mealDAO.getMealByLetters(letters);
+    }
 }

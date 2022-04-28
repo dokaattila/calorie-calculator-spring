@@ -36,5 +36,11 @@ public class CalorieController {
     public Statistic getMealStatistic(@RequestBody String content) {
         return this.calorieService.getMealStatistic(content);
     }
+    @GetMapping("/filters")
+    @ResponseBody
+    public List<Meal> getMealByLetters(@RequestParam String query){
+        return this.calorieService.getMealByLetters(query);
+    }
+
 
 }

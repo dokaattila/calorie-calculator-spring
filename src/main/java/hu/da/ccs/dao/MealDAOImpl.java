@@ -100,4 +100,25 @@ public class MealDAOImpl implements MealDAO {
     }
 
 
-}
+    public List<Meal> getMealByLetters(String letters) {
+        List<Meal> mealList = new ArrayList<>();
+        try {
+            PreparedStatement prep = conn.getConnection().
+                    prepareStatement("SELECT * FROM foodlist WHERE food_name like ? ORDER BY food_name");
+            prep.setString(1,letters + "%");
+            ResultSet res = prep.executeQuery();
+            while (res.next()) {
+                mealList.add(new Meal(
+                        res.getInt("id"),
+                        res.getString("food_name"),
+                        0
+                ));
+            }
+            return mealList;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    }
+
