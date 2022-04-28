@@ -3,6 +3,8 @@ package hu.da.ccs.model;
 import lombok.*;
 import lombok.extern.jackson.Jacksonized;
 
+import java.math.BigDecimal;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -11,14 +13,14 @@ import lombok.extern.jackson.Jacksonized;
 @Setter
 public class Statistic {
 
-    private double sumCal;
-    private double sumCarb;
-    private double sumFat;
-    private double sumProt;
-    private double avgCal;
-    private double avgCarb;
-    private double avgFat;
-    private double avgProt;
+    private BigDecimal sumCal;
+    private BigDecimal  sumCarb;
+    private BigDecimal  sumFat;
+    private BigDecimal  sumProt;
+    private BigDecimal  avgCal;
+    private BigDecimal  avgCarb;
+    private BigDecimal  avgFat;
+    private BigDecimal  avgProt;
 
 
 

@@ -51,14 +51,7 @@ public class FoodDAOImpl implements FoodDAO{
 
     @Override
     public Statistic getStatistic(String content) {
-        Type listType = new TypeToken<ArrayList<Food>>() {}.getType();
-        ArrayList<Food> foodList = new Gson().fromJson(content, listType);
-        int listSize = foodList.size();
-        double sumFat = foodList.stream().map(Food::getFoodFat).reduce(Double::sum).orElse(0.0);
-        double sumCal = foodList.stream().map(Food::getFoodCalories).reduce(Double::sum).orElse(0.0);
-        double sumCarb = foodList.stream().map(Food::getFoodCarb).reduce(Double::sum).orElse(0.0);
-        double sumProt = foodList.stream().map(Food::getFoodProtein).reduce(Double::sum).orElse(0.0);
-        return new Statistic(sumCal, sumCarb, sumFat, sumProt,
-                sumCal/listSize, sumCarb/listSize, sumFat/listSize, sumProt/listSize);
+
+        return null;
     }
 }
