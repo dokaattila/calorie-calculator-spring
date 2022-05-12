@@ -12,13 +12,19 @@ Calorie Calculator Spring is a java backend application, that returns common foo
 - SQLite
 - Spring Boot JDBC - version 2.6.3
 
+## Steps to install and run
+
+1. Build the project using `mvn clean install`
+2. Run using `mvn spring-boot:run`
+3. The web application is accessible via localhost:8080
+
 ## Live Demo on Heroku
 
 https://calorie-calculator-spring.herokuapp.com/
 
 ## Usage
 
-- https://calorie-calculator-spring.herokuapp.com/getallmeal
+- URL/getallmeal
 it takes a GET-request and returns a JSON object with all foods.
 - Example:
 ```json
@@ -35,7 +41,7 @@ it takes a GET-request and returns a JSON object with all foods.
   }
 ]
 ```
-- https://calorie-calculator-spring.herokuapp.com/getmealstatistic
+- URL/getmealstatistic
 it takes a POST-request with a request body, which is a JSON object. It returns a JSON object with statistics.
 - Example for request body:
 ```json
@@ -73,7 +79,6 @@ Project is: _in progress_
 
 To do:
 - more features
-- Installing guide.
 
 ## Acknowledgements
 - This project is a further thought version of the original application, which uses Java Swing.
